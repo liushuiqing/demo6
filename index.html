@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>个人网站</title>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!--移动设备优先            视窗                                       宽度=设备宽度                   缩放比例1倍                   最大缩放比例1倍                禁止用户缩放-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+	<!--[if lte IE 8]>
+	<style type="text/css">
+		html,body{width:100%; height:100%; overflow:scroll}
+		.section-btn{display:none;}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<section class="section-wrap">
+		<div class="section section-1">
+			<div class="title active">
+			</div>
+		</div>
+		<div class="section section-2">
+			<div class="title a">
+				<div class="ti">
+					<p>关于我</p>
+					<p>About me</p>
+				</div>
+				<div class="gyw clearfix">
+					<div class="gyw_l">
+						<img src="img/4.gif"/><br />
+						<b>刘水青<br />前端工程师<br />坐标：北京</b>
+					</div>
+					<div class="gyw_r">
+						<b>本人踏实稳重，吃苦耐劳，有团队意识<br /> 
+						有严谨的编码习惯和行为习惯<br />
+						 乐于与用户以及同事和领导沟通<br />
+						 有较强的工作能力和良好的适应与协作能力<br />
+						 勇于接受挑战，具有较强的自学能力</b>
+					</div>
+				</div>
+				<div id="news">
+					<div id="content">
+						<p style="display: block;" id="1">
+							<img src="img/4.gif"/><br />
+							<b>刘水青<br />前端工程师<br />坐标：北京</b>
+						</p>
+						<p id="2" style='display: none;'>
+							<b>本人踏实稳重，吃苦耐劳，有团队意识<br /> 
+							有严谨的编码习惯和行为习惯<br />
+							乐于与用户以及同事和领导沟通<br />
+							有较强的工作能力和良好的适应与协作能力<br />
+							勇于接受挑战，具有较强的自学能力</b>
+						</p>
+					</div>
+					<ul class="clearfix">
+						<li style="background: #BD362F;" onclick="fun(1)"></li>
+						<li onclick="fun(2)"></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					function fun(num){
+						var li=document.getElementsByTagName("li");
+						var nums=["1","2"];
+						for(var i=0;i<4;i++){
+						    if(nums[i]==num){
+						    	li[i].style.backgroundColor="#BD362F";
+						    	document.getElementById(nums[i]).style.display="block";
+						    }else{
+						    	li[i].style.backgroundColor="";
+						    	document.getElementById(nums[i]).style.display="none";
+						  	}
+					  	}
+					}
+				</script>
+			</div>
+		</div>
+		<div class="section section-3">
+			<div class="title a">
+				<div class="ti">
+					<p>技术掌握</p>
+					<p>Technical mastery</p>
+				</div>
+				<div class="demo">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-offset-3 col-md-6">
+				
+								<div class="progress_bar">
+									<div class="pro-bar">
+										<small class="progress_bar_title">
+											HTML5/CSS
+											<span class="progress_number">90%</span>
+										</small>
+										<span class="progress-bar-inner" style="background-color: #1abc9c; width: 90%;" data-value="90" data-percentage-value="90"></span>
+									</div>
+								</div>
+				
+								<div class="progress_bar">
+									<div class="pro-bar">
+										<small class="progress_bar_title">
+											JavaScript
+											<span class="progress_number">75%</span>
+										</small>
+										<span class="progress-bar-inner" style="background-color: #fdba04; width: 75%;" data-value="75" data-percentage-value="75"></span>
+									</div>
+								</div>
+				
+								<div class="progress_bar">
+									<div class="pro-bar">
+										<small class="progress_bar_title">
+											jQuery
+											<span class="progress_number">75%</span>
+										</small>
+										<span class="progress-bar-inner" style="background-color: #049dff; width: 75%;" data-value="75" data-percentage-value="75"></span>
+									</div>
+								</div>
+				
+								<div class="progress_bar">
+									<div class="pro-bar">
+										<small class="progress_bar_title">
+											Bootsyrap
+											<span class="progress_number">80%</span>
+										</small>
+										<span class="progress-bar-inner" style="background-color: #1abc9c; width: 80%;" data-value="80" data-percentage-value="80"></span>
+									</div>
+								</div>
+								<div class="progress_bar">
+									<div class="pro-bar">
+										<small class="progress_bar_title">
+											Ps
+											<span class="progress_number">90%</span>
+										</small>
+										<span class="progress-bar-inner" style="background-color: #fdba04; width: 90%;" data-value="90" data-percentage-value="90"></span>
+									</div>
+								</div>
+				
+								<div class="progress_bar">
+									<div class="pro-bar">
+										<small class="progress_bar_title">
+											Vue
+											<span class="progress_number">50%</span>
+										</small>
+										<span class="progress-bar-inner" style="background-color: #049dff; width: 50%;" data-value="50" data-percentage-value="50"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="section section-4">
+			<div class="title a">
+				<div class="ti">
+					<p>项目展示</p>
+					<p>Project presentation</p>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<a href="https://liushuiqing.github.io/demo/ ">
+							<img src="img/gr (3).jpg"/><br /><span>谁的咖啡</span>
+						</a>
+						
+					</li>
+					<li>
+						<a href="http://www.zgcxueyuan.com/">
+							<img src="img/gr (5).jpg"/><br /><span>景秀教育</span>
+						</a>
+							
+					</li>
+					<li>
+						<a href="https://liushuiqing.github.io/demo3/">
+							<img src="img/gr (1).jpg"/><br /><span>GNOME</span>
+						</a>
+						
+					</li>
+				</ul>                        
+			</div>
+		</div>
+		<div class="section section-5">
+			<div class="title a">
+				<div class="ti">
+					<p>联系我</p>
+					<p>Contact me</p>
+					<div class="lxw">
+						<div class="lxw_l">
+							<form>
+								<input type='text' id='msg_uname' onblur='if (this.value ==""){this.value="请输入您的称呼"}' onfocus='if (this.value =="请输入您的称呼"){this.value =""}' value='请输入您的称呼'><br />
+							    <input type='text' id='msg_uemail' onblur='if (this.value ==""){this.value="请输入您的邮箱"}' onfocus='if (this.value =="请输入您的邮箱"){this.value =""}' value='请输入您的邮箱'><br />
+							    <input type='text' id='msg_utel' onblur='if (this.value ==""){value="请输入您的电话"}' onfocus='if (this.value =="请输入您的电话"){this.value =""}' value='请输入您的电话'><br />
+							    <textarea id='msgtext' onblur='if (this.value ==""){this.value="请输入留言内容"}' onfocus='if (this.value =="请输入留言内容"){value =""}'>请输入留言内容</textarea><br />
+							    <input type='text' id='msg_vcode' onblur='if (this.value ==""){this.value="请输入验证码"}' onfocus='if (this.value =="请输入验证码"){this.value =""}' value='请输入验证码'><img id='vcode' alt='看不清点击图片换一张' title='看不清点击图片换一张' src='http://kf2012.qebang.cn/GetCode.asp'><br />
+								<div class="clear"></div>
+								<button class='msg_button' name='msg_sub'  id='msg_sub_button'>确 定</button>
+							</form>	
+						</div>
+						<div class="lxw_r">
+							<p>本人精通div+css,熟练使用 js , jQuery, 吃苦耐劳，工作认真，能很快适应新环境，处事冷静，学习能力较强， 对自己要求严格，条理性强，善于整理，具有良好的团队精神和较强的组织能力，具有扎实的前端实务操作技能， 能熟练地运用Photoshop、HBuilder、Rreamweaver熟练各类办公软件</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<ul class="section-btn">
+	  <li class="on b"></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	  <li></li>
+	</ul>
+	<div class="arrow">&laquo;</div>
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/less.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/onlineService.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+<script type='text/javascript'>
+	var isSync='1';
+	var send_to_email='2749099010@qq.com';
+	var showStyle='1';
+	var wzh='http://kf2012.qebang.cn';
+	var kuse='chyhon';
+</script>
